@@ -1,14 +1,11 @@
 package mytest;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @Author yxx
  * @Date 2021/8/24 15:26
  * 树排序
  */
-public class treemaxdepth {
+public class 是否平衡二叉树 {
 
     static class Treenode {
         int val;
@@ -20,13 +17,17 @@ public class treemaxdepth {
         }
     }
 
-    private static int treemaxdepth(Treenode root) {
+    private static int height(Treenode root) {
         if (root == null) {
             return 0;
         }
-        int treemaxdepth = treemaxdepth(root.left);
-        int treemaxdepth1 = treemaxdepth(root.right);
-        return Math.max(treemaxdepth, treemaxdepth1)+1;
+        int leftdepth = height(root.left);
+
+        int rightdepth = height(root.right);
+
+        if (Math.abs(rightdepth - leftdepth) > 1)
+            return -1;
+        return Math.max(leftdepth, rightdepth) + 1;
 
     }
 
@@ -35,7 +36,7 @@ public class treemaxdepth {
         treenode.left = new Treenode(1);
         treenode.right = new Treenode(2);
         treenode.left.left = new Treenode(3);
-        int treemaxdepth = treemaxdepth(treenode);
+        int treemaxdepth = height(treenode);
 
         System.out.println(treemaxdepth);
     }

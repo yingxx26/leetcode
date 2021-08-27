@@ -5,7 +5,7 @@ package mytest;
  * @Date 2021/8/24 15:26
  * 树排序
  */
-public class treereverse {
+public class 树的翻转 {
 
     static class Treenode {
         int val;

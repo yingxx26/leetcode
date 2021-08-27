@@ -5,7 +5,7 @@ package mytest;
  * @Date 2021/8/22 14:20
  * 滑动窗口
  */
-public class minSubArrayLen {
+public class 最小子数组和 {
 
 
     private static int minSubArrayLen(int[] source, int target) {

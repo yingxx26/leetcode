@@ -5,7 +5,7 @@ package mytest;
  * @Date 2021/8/22 14:20
  * 双指针法
  */
-public class movezero {
+public class 把0移动到数组末尾 {
 
 
     private static int[] movezero(int[] source) {

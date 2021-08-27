@@ -9,7 +9,7 @@ import java.util.Set;
  * @Date 2021/8/22 14:20
  * 指针
  */
-public class IntersectionTwoArrays {
+public class 两个有序数组排序 {
 
 
     private static int[] intersectionTwoArrays(int[] source1, int[] source2) {

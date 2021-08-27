@@ -5,7 +5,7 @@ package mytest;
  * @Date 2021/8/22 14:20
  * 指针对撞
  */
-public class twosum {
+public class 有序数组的两个数的和等于target {
 
 
     private static String twosum(int[] source, int target) {

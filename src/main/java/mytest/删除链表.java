@@ -4,7 +4,7 @@ package mytest;
  * @Author yxx
  * @Date 2021/8/23 20:41
  */
-public class DeleteLinkedList {
+public class 删除链表 {
 
     public static class Node {
         int val;
