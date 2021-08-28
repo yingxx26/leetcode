@@ -4,7 +4,7 @@ package mytest;
  * @Author yxx
  * @Date 2021/8/28 12:56
  */
-public class 二叉搜索树公共祖先 {
+public class 树___二叉搜索树公共祖先 {
 
     static class Treenode {
         int val;

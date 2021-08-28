@@ -1,11 +1,14 @@
 package mytest;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Author yxx
  * @Date 2021/8/24 15:26
  * 树排序
  */
-public class 数的叶子路径和等于target {
+public class 树___的最大深度 {
 
     static class Treenode {
         int val;
@@ -17,16 +20,13 @@ public class 数的叶子路径和等于target {
         }
     }
 
-    private static boolean treedepthsum(Treenode root, int sum) {
+    private static int treemaxdepth(Treenode root) {
         if (root == null) {
-            return false;
+            return 0;
         }
-        if (root.left == null && root.right == null) {
-            return root.val == sum;
-        }
-        boolean leftis = treedepthsum(root.left, sum - root.val);
-        boolean rightis = treedepthsum(root.right, sum - root.val);
-        return leftis || rightis;
+        int treemaxdepth = treemaxdepth(root.left);
+        int treemaxdepth1 = treemaxdepth(root.right);
+        return Math.max(treemaxdepth, treemaxdepth1)+1;
 
     }
 
@@ -35,7 +35,7 @@ public class 数的叶子路径和等于target {
         treenode.left = new Treenode(1);
         treenode.right = new Treenode(2);
         treenode.left.left = new Treenode(3);
-        boolean treemaxdepth = treedepthsum(treenode, 4);
+        int treemaxdepth = treemaxdepth(treenode);
 
         System.out.println(treemaxdepth);
     }

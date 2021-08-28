@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @Date 2021/8/24 15:26
  * 树排序
  */
-public class 二叉搜索树的第k小 {
+public class 树___二叉搜索树的第k小 {
 
     static class Treenode {
         int val;

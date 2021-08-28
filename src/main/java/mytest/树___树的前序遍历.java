@@ -2,14 +2,13 @@ package mytest;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * @Author yxx
  * @Date 2021/8/24 15:26
  * 树排序
  */
-public class 栈模拟树 {
+public class 树___树的前序遍历 {
 
     static class Treenode {
         int val;
@@ -22,16 +21,13 @@ public class 栈模拟树 {
     }
 
     private static void pre(Treenode root, List res) {
-        Stack<Treenode> stack = new Stack<Treenode>();
-        while (root != null || !stack.isEmpty()) {
-            while (root != null) {
-                res.add(root.val);
-                stack.push(root);
-                root = root.left;
-            }
-            Treenode cur = stack.pop();
-            root = cur.right;
+        if (root == null) {
+            return;
         }
+        res.add(root.val);
+        pre(root.left, res);
+        pre(root.right, res);
+
     }
 
     public static void main(String[] args) {

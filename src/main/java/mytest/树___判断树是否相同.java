@@ -8,7 +8,7 @@ import java.util.List;
  * @Date 2021/8/24 15:26
  * 树排序
  */
-public class 判断数是否相同 {
+public class 树___判断树是否相同 {
 
     static class Treenode {
         int val;

@@ -4,7 +4,7 @@ package mytest;
  * @Author yxx
  * @Date 2021/8/22 14:20
  */
-public class 二分查找 {
+public class 数组___二分查找 {
 
     private static Integer[] generateOrderedArray(int n) {
 

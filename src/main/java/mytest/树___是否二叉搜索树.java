@@ -4,7 +4,7 @@ package mytest;
  * @Author yxx
  * @Date 2021/8/28 12:56
  */
-public class 是否二叉搜索树 {
+public class 树___是否二叉搜索树 {
 
     static class Treenode {
         long val;

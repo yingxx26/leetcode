@@ -8,7 +8,7 @@ import java.util.Map;
  * @Date 2021/8/22 14:20
  * hash表
  */
-public class 无序数组的两个数的和等于target {
+public class 数组___无序数组的两个数的和等于target {
 
 
     private static String twosum(int[] source, int target) {

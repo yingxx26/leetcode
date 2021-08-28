@@ -8,7 +8,7 @@ import java.util.List;
  * @Author yxx
  * @Date 2021/8/23 20:41
  */
-public class 翻转链表 {
+public class 链表___翻转链表 {
 
     public static class Node {
         int val;

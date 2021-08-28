@@ -5,7 +5,7 @@ package mytest;
  * @Date 2021/8/24 15:26
  * 树排序
  */
-public class 是否平衡二叉树 {
+public class 树___树的翻转 {
 
     static class Treenode {
         int val;
@@ -17,17 +17,15 @@ public class 是否平衡二叉树 {
         }
     }
 
-    private static int height(Treenode root) {
+    private static Treenode treereverse(Treenode root) {
         if (root == null) {
-            return 0;
+            return null;
         }
-        int leftdepth = height(root.left);
-
-        int rightdepth = height(root.right);
-
-        if (Math.abs(rightdepth - leftdepth) > 1)
-            return -1;
-        return Math.max(leftdepth, rightdepth) + 1;
+        Treenode treeleft = treereverse(root.left);
+        Treenode treeright = treereverse(root.right);
+        root.left = treeright;
+        root.right = treeleft;
+        return root;
 
     }
 
@@ -36,9 +34,9 @@ public class 是否平衡二叉树 {
         treenode.left = new Treenode(1);
         treenode.right = new Treenode(2);
         treenode.left.left = new Treenode(3);
-        int treemaxdepth = height(treenode);
+        Treenode treereverse = treereverse(treenode);
 
-        System.out.println(treemaxdepth);
+        System.out.println(treereverse);
     }
 
 }
